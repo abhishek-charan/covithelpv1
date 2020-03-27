@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+  <div class="center">
+
+  <h1>Sign in</h1>
+</div>
+<form>
+  <ion-list>
+    <ion-item>
+      <ion-icon name="call"></ion-icon>
+      <ion-input type="text" aria-placeholder="Phone Number" placeholder=" Your Phone Number" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="mail"></ion-icon>
+      <ion-input type="email" aria-placeholder="Your Email Id" placeholder=" Your Email Id"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-icon name="medkit"></ion-icon>
+      <ion-input type="email" aria-placeholder=" Refferal code (optional)" placeholder=" Refferal code (optional)"></ion-input>
+    </ion-item>
+    <ion-button expand="block" shape="flat" (click)="login()">Verify Number</ion-button>
+  </ion-list>
+</form>
+</ion-content>

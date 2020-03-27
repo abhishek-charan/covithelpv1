@@ -1,0 +1,7 @@
+{
+  "name": "covithelp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
