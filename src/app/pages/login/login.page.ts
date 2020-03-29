@@ -12,7 +12,6 @@ export class LoginPage implements OnInit {
 
   ngOnInit() {
   }
-
   login(){
 
 this.router.navigate(['/home/settings'])

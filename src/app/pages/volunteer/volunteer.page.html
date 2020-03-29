@@ -1,9 +1,65 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>volunteer</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button text="" icon="home" defaultHref="/"></ion-back-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content fullscreen class="ion-padding">
+  <form onsubmit="processForm(event)">
+    <ion-list lines="full" class="ion-no-margin ion-no-padding">
+      <ion-item>
+        <ion-label position="stacked">Full Name <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="text" oninput="handleFirstNameValue(event)"></ion-input>
+      </ion-item>
 
+      <ion-item>
+        <ion-label position="stacked">Contact Number <ion-text color="danger">*</ion-text></ion-label>
+        <ion-input required type="number" oninput="handleLastNameValue(event)"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Profession</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="stacked">Address</ion-label>
+        <ion-input placeholder="Address Line 1"></ion-input>
+        <ion-input placeholder="Address Line 2"></ion-input>
+        <ion-input placeholder="City"></ion-input>
+        <ion-input placeholder="State"></ion-input>
+        <ion-input placeholder="Zip Code"></ion-input>
+      </ion-item>
+      <ion-list>
+        <ion-list-header>Assisting in</ion-list-header>
+          <ion-item>
+            <ion-label>Food</ion-label>
+            <ion-checkbox></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Clothing</ion-label>
+            <ion-checkbox></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Shelter</ion-label>
+            <ion-checkbox></ion-checkbox>
+          </ion-item>
+          <ion-item>
+            <ion-label>Medical</ion-label>
+            <ion-checkbox></ion-checkbox>
+          </ion-item>
+        </ion-list>
+      <ion-item>
+        <ion-label position="stacked" aria-placeholder="Instruction or suggestion" placeholder="Instruction or suggestion">Notes</ion-label>
+        <ion-textarea></ion-textarea>
+      </ion-item>
+    </ion-list>
+    
+    <div class="ion-padding">
+      <ion-button expand="block" type="submit" class="ion-no-margin">Next</ion-button>
+    </div>
+  </form>
 </ion-content>
